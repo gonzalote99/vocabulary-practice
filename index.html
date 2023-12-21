@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>vocabulary practice</title>
+</head>
+<body>
+  <header class="w-full p-5 bg-red-700 text-center font-bold text-white">
+     <h1>vocabulary practice</h1>
+  </header>
+  <section class="mt-10 w-3/4 mx-auto">
+     <h2 class="text-3x1 text-center">want to practice?</h2>
+     <div class="mt-5 flex justify-center">
+       <button class="bg-blue-300 p-5 rounded-3x1 font-bold mx-3" onclick="randomSelection(colors)">colors</button>
+       <button class="bg-blue-300 p-5 rounded-3x1 font-bold mx-3" onclick="randomSelection(verbs)">verbs</button>
+     </div>
+  </section>
+  <section class="mt-10 w-3/4 mx-auto">
+    <h2 class="text-3x1 text-center">write word in english</h2>
+    <div class="mt-5 flex flex-col items-center">
+     <div class="flex">
+       <h3 class="text-x1">meaning: </h3><p class="ml-1 font-bold text-2x1" id="word">****</p>
+     </div> 
+     <form class="flex mt-5" action="">
+       <input class="bg-blue-100 p-3 ronded-3x1 border-black border shadow-lg" type="text" name="word" id="input-word">
+       <button type="button" class="bg-blue-800 text-white p-3 ronded-3x1 font-bold mx-3" onclick="checkAnswer()">check</button>
+
+     </form>
+     <div class="" id="result"></div>
+    </div>
+  </section>
+  <script src="api/colors.json"></script>
+  <script src="api/verbs.json"></script>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
